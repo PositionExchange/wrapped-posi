@@ -13,7 +13,7 @@ contract WrappedPosi {
     event Approval(address indexed owner, address indexed spender, uint256 amount);
     event Transfer(address indexed from, address indexed to, uint256 amount);
     event Deposit(address indexed to, uint256 amount);
-    event Withdrawal(address indexed from, uint256 wad);
+    event Withdrawal(address indexed from, uint256 amount);
 
     mapping(address => uint256) public balanceOf;
     mapping(address => mapping(address => uint256)) public allowance;
