@@ -59,7 +59,7 @@ contract WrappedPosi {
             from != msg.sender && allowance[from][msg.sender] != type(uint256).max
         ) {
             require(allowance[from][msg.sender] >= amount);
-            allowance[to][msg.sender] -= amount;
+            allowance[from][msg.sender] -= amount;
         }
 
         balanceOf[from] -= amount;
